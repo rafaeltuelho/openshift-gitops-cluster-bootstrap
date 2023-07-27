@@ -23,14 +23,6 @@ spec:
       debug: false
       logLevel: INFO
     dashboard: {}
-    database:
-      credentialsSecretName: postgres-credentials
-      externalDb: false
-      postgresDb: dbche
-      postgresHostName: postgres
-      postgresPort: "5432"
-      pvc:
-        claimSize: 1Gi
     devWorkspace:
       runningLimit: '5'
     devfileRegistry: {}
@@ -43,7 +35,6 @@ spec:
           universal-developer-image-ubi8-latest=quay.io/redhat_na_ssa/universal-developer-image@sha256:72b8edb995f76eb5575e7c3d01c787abed78023ea96d12c0ef54493971c7e299;universal-developer-image-ubi8-latest=quay.io/devfile/universal-developer-image@sha256:9777fcda747644a69c5422013a263413dd1268d55b04a5d5195f52ff881af107
     metrics:
       enable: true
-    pluginRegistry: {}
   containerRegistry: {}
   networking:
     auth:

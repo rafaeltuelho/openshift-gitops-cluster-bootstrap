@@ -22,8 +22,7 @@ htpasswd -B -b ${SCRIPT_RELATIVE_DIR_PATH}/htpasswd-users user5 openshift
 
 oc delete secret htpasswd-secret --ignore-not-found=true -n openshift-config
 oc create secret generic htpasswd-secret --from-file=htpasswd=${SCRIPT_RELATIVE_DIR_PATH}/htpasswd-users -n openshift-config
-# oc replace -f ./oauth.yaml
-oc apply -f - <<EOF
+oc replace -f - <<EOF
 apiVersion: config.openshift.io/v1
 kind: OAuth
 metadata:
