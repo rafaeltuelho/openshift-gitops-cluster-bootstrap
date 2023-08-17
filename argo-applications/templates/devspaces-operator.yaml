@@ -16,7 +16,7 @@ spec:
     targetRevision: {{ .Values.gitRepo.targetRevision }}
     path: operators/devspaces
     directory:
-      include: '{operator.yaml, namespace.yaml}'
+      include: '{operator.yaml,namespace.yaml}'
   destination:
     server: https://kubernetes.default.svc
     namespace: openshift-operators
