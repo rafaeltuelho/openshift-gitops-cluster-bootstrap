@@ -6,7 +6,7 @@ metadata:
   name: crunchy-postgres-operator
   namespace: openshift-operators
 spec:
-  channel: v5
+  # channel: v5
   installPlanApproval: Automatic
   name: crunchy-postgres-operator
   source: certified-operators

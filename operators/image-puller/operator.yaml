@@ -3,7 +3,7 @@ kind: Subscription
 metadata:
   name: kubernetes-imagepuller-operator
 spec:
-  channel: stable
+  # channel: stable
   installPlanApproval: Automatic
   name: kubernetes-imagepuller-operator
   source: community-operators

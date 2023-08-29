@@ -4,7 +4,7 @@ metadata:
   name: hyperfoil-bundle
   namespace: openshift-operators
 spec:
-  channel: alpha
+  # channel: alpha
   installPlanApproval: Automatic
   name: hyperfoil-bundle
   source: community-operators

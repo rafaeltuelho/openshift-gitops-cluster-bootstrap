@@ -3,7 +3,7 @@ kind: Subscription
 metadata:
   name: devspaces
 spec:
-  channel: stable
+  # channel: stable
   installPlanApproval: Automatic
   name: devspaces
   source: redhat-operators

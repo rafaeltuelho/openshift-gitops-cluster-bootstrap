@@ -3,7 +3,7 @@ kind: Subscription
 metadata:
   name: patch-operator 
 spec:
-  channel: alpha
+  # channel: alpha
   installPlanApproval: Automatic
   name: patch-operator 
   source: community-operators
